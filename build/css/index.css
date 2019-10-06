@@ -1,0 +1,133 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 83px;
+  background-color: #131313;
+}
+
+.logo {
+  color: #E3B873;
+}
+
+.navigation {
+  width: 580px;
+  color: white;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__item {
+  display: inline-block;
+  list-style: none;
+}
+
+.number {
+  color: #E3B873;
+}
+
+.button {
+  height: 37px;
+  text-decoration: none;
+  background-color: #E3B873;
+  color: white;
+  font-size: 14px;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.hero {
+  display: flex;
+  height: 707px;
+  color: white;
+}
+
+.hero__left {
+  width: 82px;
+  background-color: #131313;
+}
+
+.hero__right {
+  background-image: url(../assets/img/hero_back.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero__description {
+  width: 500px;
+  margin-left: 50px;
+}
+
+.hero__description h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.hero__description p {
+  font-size: 22px;
+}
+
+.hero__description span {
+  color: #E3B873;
+}
+
+.com-projects {
+  height: 1074px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/img/compl-projects_back.png);
+}
+
+.types {
+  height: 2624px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/img/types-of-repair_back.png);
+}
+
+@media only screen and (max-width: 375px) {
+  .header .button {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .button {
+    display: block;
+  }
+
+  .hero__left {
+    display: none;
+  }
+}
